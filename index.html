@@ -1,19 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head><script
-          <meta name="google-adsense-account" content="ca-pub-5878201608537821"> 
-</head>
-<body style="text-align: center; background-color: lightblue;">
-
-    <h1>Welcome to My First Web Page</h1>
-    <p>This is a web tool project.</p>
-    <button onclick="alert('Hello! Web Development Started!')">Click Here!</button>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
 <head>
+    <meta name="google-adsense-account" content="ca-pub-5878201608537821">
     <title>Discount Calculator</title>
     <style>
         body { font-family: sans-serif; text-align: center; background: #eef2f3; padding: 20px; }
@@ -22,13 +10,17 @@
         button { padding: 10px 15px; background: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; }
     </style>
 </head>
-<body>
+<body style="text-align: center; background-color: lightblue;">
+
+    <h2>Welcome to My First Web Page!</h2>
+    <p>This is a web tool project.</p>
+    <button onclick="alert('Hello! Web Development Started!')">Click Here!</button>
 
     <div class="box">
         <h2>Discount Calculator</h2>
         <input type="number" id="price" placeholder="Original Price (Rs.)">
         <input type="number" id="discount" placeholder="Discount %">
-        <br>
+        <br><br>
         <button onclick="calculate()">Calculate</button>
         <h3 id="result"></h3>
     </div>
@@ -37,108 +29,12 @@
         function calculate() {
             let p = document.getElementById('price').value;
             let d = document.getElementById('discount').value;
-            if(p && d) {
+            if (p && d) {
                 let save = p * (d / 100);
                 let finalPrice = p - save;
-                document.getElementById('result').innerText = "Final Price: Rs." + finalPrice;
+                document.getElementById('result').innerText = 'Final Price: Rs. ' + finalPrice;
             } else {
-                document.getElementById('result').innerText = "Enter valid numbers!";
-            }
-        }
-    </script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Discount Calculator</title>
-    <style>
-        body { font-family: sans-serif; text-align: center; background: #eef2f3; padding: 20px; }
-        .box { background: white; padding: 20px; border-radius: 10px; max-width: 300px; margin: auto; }
-        label { font-weight: bold; display: block; margin-top: 10px; }
-        input { width: 80%; padding: 8px; margin: 5px 0 15px 0; }
-        button { padding: 10px 15px; background: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
-    </style>
-</head>
-<body>
-
-    <div class="box">
-        <h2>Discount Calculator</h2>
-        
-        <label>Original Price Rupees:</label>
-        <input type="number" id="price" placeholder="Enter Price">
-
-        <label>Discount %:</label>
-        <input type="number" id="discount" placeholder="Enter Discount %">
-
-        <button onclick="calculate()">Calculate</button>
-        
-        <h3 id="result"></h3>
-    </div>
-
-    <script>
-        function calculate() {
-            let p = document.getElementById('price').value;
-            let d = document.getElementById('discount').value;
-            if(p && d) {
-                let save = p * (d / 100);
-                let finalPrice = p - save;
-                document.getElementById('result').innerText = "Final Price: Rs. " + finalPrice;
-            } else {
-                document.getElementById('result').innerText = "Numbers type cheyyi!";
-            }
-        }
-    </script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Online Discount Calculator</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; background: #f4f4f4; margin: 0; padding: 15px; }
-        .ad-space { background: #e0e0e0; border: 1px dashed #999; padding: 10px; margin: 10px auto; max-width: 320px; font-size: 12px; color: #555; }
-        .box { background: white; padding: 20px; border-radius: 8px; max-width: 320px; margin: auto; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        label { font-weight: bold; display: block; margin-top: 10px; text-align: left; }
-        input { width: 90%; padding: 8px; margin: 5px 0 10px 0; border: 1px solid #ccc; border-radius: 4px; }
-        button { width: 100%; padding: 10px; background: #007bff; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; }
-        h3 { color: #28a745; margin-top: 15px; }
-    </style>
-</head>
-<body>
-
-    <!-- Top Ad Banner Space -->
-    <div class="ad-space">Google AdSense Top Banner Space</div>
-
-    <div class="box">
-        <h2>Discount Calculator</h2>
-        
-        <label>Original Price (Rs.):</label>
-        <input type="number" id="price" placeholder="Enter Original Price">
-
-        <label>Discount (%):</label>
-        <input type="number" id="discount" placeholder="Enter Discount Percentage">
-
-        <button onclick="calculate()">Calculate Price</button>
-        
-        <h3 id="result"></h3>
-    </div>
-
-    <!-- Bottom Ad Banner Space -->
-    <div class="ad-space">Google AdSense Bottom Banner Space</div>
-
-    <script>
-        function calculate() {
-            let p = document.getElementById('price').value;
-            let d = document.getElementById('discount').value;
-            if(p && d) {
-                let save = p * (d / 100);
-                let finalPrice = p - save;
-                document.getElementById('result').innerText = "Final Price: Rs. " + finalPrice;
-            } else {
-                document.getElementById('result').innerText = "Please enter valid numbers!";
+                document.getElementById('result').innerText = 'Enter valid numbers!';
             }
         }
     </script>
